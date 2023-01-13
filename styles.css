@@ -4,9 +4,10 @@
   padding-right: 20px;
   width: 100%;
   height: 100vh;
-  background-image: url("./images/hero.jpg");
+   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("./images/hero.jpg");
   background-size: cover;
   display: block;
+  border-bottom: 8px solid rgb(34,34,34);
 }
 .header {
   padding-top: 18px;
@@ -19,11 +20,11 @@
   line-height: normal;
 }
 
-.sign-up {
+.sign-in {
   color: #fff;
   margin-top: 0.5rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 600;
   background-color: #e50914;
   float: right;
   border: red;
@@ -38,14 +39,13 @@ h5 {
   font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
   text-align: center;
   color: #fff;
-  margin-left: 155px;
-  margin-right: 155px;
+ 
 }
 h1 {
-  font-size: 50px;
+  font-size: 53px;
   font-family: Netflix Sans, Helvetica Neue, sans-serif;
   line-height: 55px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h3 {
@@ -70,23 +70,41 @@ form {
   border-color: #e50914;
   cursor: pointer;
   font-weight: 600;
-  height: 50px;
   font-size: 26px;
-  margin-top: 17px;
-}
-.email {
-  width: 470px;
-  height: 55px;
+  margin-top: 25px;
+  margin-left: -6px;
+  margin-bottom:  30px;
+  padding-bottom: 10px;
+  padding: 16px;
+  padding-right: 30px;  
 }
 
-hr.style-one {
-  margin-top: 0px;
-  width: 100%;
-border: 0;
-display:block;
-height: 10px;
-  background-color:rgb(34,34,34);
+.email {
+  width: 480px;
+  height: 56px;
+  padding-top: 3px;
+}
+::placeholder{
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+.section-2, .section-3, .section-4, .section-5, .section-6, .section-7{
+  background-color: black;
+   border-bottom: 8px solid rgb(34,34,34);
+   
 }
 .section-2{
-  background-color: black;
+  width: 100%;
+  height: 80vh;
+}
+.enjoy-tv{
+  margin-top: 110px;
+}
+.grid-container {
+  display: grid; /* sets the container as a grid */
+  grid-template-columns: repeat(2, 1fr); /* creates two columns of equal width */
+  grid-gap: 10px; /* adds a gap of 10px between the items */
+padding: 50px;
 }
