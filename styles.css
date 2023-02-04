@@ -1,21 +1,27 @@
+html, body{
+width: 100%;
+height: 100%;
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+}
+
 .section-1 {
-  margin-top: -8px;
-  padding-right: 20px;
-  width: 100%;
   height: 100vh;
-   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("./images/hero.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("./images/hero.jpg");
   background-size: cover;
-  display: block;
-  border-bottom: 8px solid rgb(34,34,34);
+  border-bottom:0.5rem solid rgb(34,34,34);
 }
+
 .header {
-  padding-top: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 120px;
+  padding-top: 2rem; 
+  padding-left: 2.5rem;
+  padding-right:2.5rem;
+  padding-bottom: 7rem;
 }
-#netflix-logo {
+.netflix-logo {
   fill: #e50914; 
+    width: 9rem;
 }
 
 .sign-in {
@@ -31,55 +37,66 @@
   padding: 7px 17px;
 }
 
-h1,
-h3, h4,
-h5 {
-  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
-  text-align: center;
-  color: #fff;
+h1, h3, h5{
+   font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+   text-align: center;
 }
+
 h1 {
-  font-size: 53px;
   font-family: Netflix Sans, Helvetica Neue, sans-serif;
   font-weight: 500;
 }
-h3 {
-  font-weight: 300;
-  font-size: 28px; 
-}
 
+h3{
+  font-weight: 300;
+  font-size: 1.8rem; 
+}
 .section-1 h1{
-  margin-top: 40px;
+padding-top: 3rem;
+font-size: 3.4rem;
+line-height: 1;
+color: white;
 }
 .section-1 h3{
-  margin-bottom: 35px;
+  margin-bottom: 2rem;
   text-align: center;
+  color: white;
+}
+.section-2 h1{
+  font-size: 3.4rem;
+}
+.section-4 h1{
+  font-size: 3.4rem;
 }
 .section-3 h1{
- margin-top: 120px;
+ margin-top: 6rem;
+ font-size: 3.4rem;
+}
+.section-1 h5{
+  color: white;
 }
 
 h5 {
-  font-size: 19.2px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 
 form {
   text-align: center;
-  font-size: 26px;
-  margin-top: 20px;
+  font-size: 1.7rem;
+  margin-top: 1.3rem;
 }
 .get-started {
   background-color: #e50914;
   color: #fff;
-  border-color: #e50914;
+  border: none;
   cursor: pointer;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 1.7rem;
   margin: 0;
   height: 100%;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 1.9rem;
+  padding-left: 1.9rem;
   margin-left: -10px;
 }
 form, .get-started {
@@ -87,20 +104,21 @@ form, .get-started {
   }
 
 .email {
-  width: 480px;
-  height: 56px;
-  padding: 3px;
+ width: 30rem;
+  height: 3.5rem;
+  padding: 0.19rem;
 
 }
 ::placeholder{
   font-weight: 600;
-  font-size: 17px;
-  padding-left: 10px;
+  font-size: 1.1rem;
+  padding-left: 0.6rem;
 }
 
 .section-2, .section-3, .section-4, .section-5 {
   background-color: black;
    border-bottom: 8px solid rgb(34,34,34);
+   color: white;
 }
 .section-6, .section-7{
   background-color: black;
@@ -111,67 +129,78 @@ form, .get-started {
 }
 .section-2 h1, h3{
   text-align: left;
-  margin-left: 60px;
+  margin-left: 4.5rem;
 }
 .enjoy-tv{
-  margin-top: 110px;
+  margin-top: 7rem;
 }
 .tv-image{
-  margin-left: 80px;
+  margin-left: 4rem;
+    position: relative;
+    width: 37rem;
 }
-video{
-  margin-bottom: 57rem;
-  width: 400px;
-   height:300px;
-   
+.video{
+  width: 55%;
+   height: 55%;
+  position: absolute;
+  left: 9.3rem;
+  bottom:7rem;
+}
+.grid-item{
+  position: relative;
 }
 .mobile-image{
-  width: 10px;
+  width: 0.6rem;
 }
 .section-3 h1, h3{
   text-align: left;
-   margin-left: 60px;
+   margin-left: 4rem;
 }
 .section-4 h1, h3{
   text-align: left;
-   margin-left: 60px;
+   margin-left: 4rem;
+
 }
 .section-5 h1, h3{
   text-align: left;
-   margin-left: 60px;
+   margin-left: 4rem;
+   color: white;
 }
 .section-5 h1{ 
-  margin-top: 110px;
+  margin-top: 6rem;
+  font-size: 3.4rem;
 }
 .section-6 h1{ 
-  padding-top: 90px;
-  padding-bottom: 40px;
+  font-size: 3.4rem;
+  padding-top: 2.3rem;
   background-color: black;
+  color: white;
 }
 
 .grid-container {
   display: grid; /* sets the container as a grid */
   grid-template-columns: repeat(2, 1fr); /* creates two columns of equal width */
-  grid-gap: 10px; /* adds a gap of 10px between the items */
-padding: 50px;
+  grid-gap: 0.6rem; /* adds a gap of 10px between the items */
+padding: 3rem;
 }
 .accordion{
-    margin: 60px auto;
+    margin: 4rem auto;
     width: 100%;
-    max-width: 750px;
+    max-width: 48.8rem;
+    color: white;
 }
 
 .accordion ul{
     list-style: none;
     width: 100%;
-    padding: 5px;
+    padding: 0.3rem;
 }
 
 .accordion ul label{
     display: flex;
     align-items: center;
-    padding: 20px;
-    font-size: 18px;
+    padding: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     background: #303030;
     margin-bottom: 2px;
@@ -182,9 +211,9 @@ padding: 50px;
 
 label::after{
     content: '+';
-    font-size: 34px;
+    font-size: 2rem;
     position: absolute;
-    right: 20px;
+    right: 1.3rem;
     transition: transform 0.5s;
     color: #fff;
 }
@@ -196,15 +225,15 @@ input[type="radio"]{
 .accordion .content{
     background: #303030;
     text-align: left;
-    padding: 0 20px;
+    padding: 0 1.3rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;
 }
 
 .accordion input[type="radio"]:checked + label + .content{
-    max-height: 600px;
-    padding: 30px 20px;
+    max-height: 37.5rem;
+    padding: 2rem 1.3rem;
 
 }
 
@@ -215,10 +244,11 @@ input[type="radio"]{
 
 
 .neww{
-  padding-top: 60px;
+  padding-top: 4rem;
 background-color: black;
- padding-bottom: 70px;
+ padding-bottom: 5rem;
    border-bottom: 8px solid rgb(34,34,34);
+   color: white;
 }
 .section-7 p{
   font-weight: 300;
@@ -226,21 +256,20 @@ background-color: black;
 
 .footer{
     padding: 50px 15% 10px;
-    border-top: 6px solid #333;
     color: #777;
 
 }
 
 .footer h2{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
 }
 
 .footer .column{
     flex-basis: 25%;
     flex-grow: 1;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
 }
 
 .footer .column a{
@@ -248,7 +277,7 @@ background-color: black;
     text-decoration: none;
     color: #777;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .footer .row{
@@ -261,4 +290,8 @@ background-color: black;
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
+@media(max-width: 900px) {
+  body{  
+    border-color: blue;
+  }
+}
